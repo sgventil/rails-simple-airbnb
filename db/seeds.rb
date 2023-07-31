@@ -12,7 +12,7 @@ puts "Creating Flats"
 
 4.times do
   flat = Flat.create!(
-    name: Faker::Hipster.sentence(word_count: 12),
+    name: Faker::Hipster.sentence(word_count: 3, supplemental: false),
     address: Faker::Address.street_address,
     description: Faker::Lorem.paragraph_by_chars(number: 160, supplemental: false),
     price_per_night: rand(20..200),
