@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+ .banner {
+  background-image: url("/assets/flats.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.margin-top-negative {
+  margin-top: -75px;
+}
+
+.h-200px {
+  height: 200px;
+}

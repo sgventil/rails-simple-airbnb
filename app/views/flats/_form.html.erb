@@ -1,0 +1,10 @@
+<div id="<%= dom_id flat %>">
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name, class: "form-control" %>
+    <%= f.input :address, class: "form-control" %>
+    <%= f.input :description, class: "form-control" %>
+    <%= f.input :number_of_guests, class: "form-control" %>
+    <%= f.input :price_per_night, class: "form-control" %>
+    <%= f.submit class: "btn btn-outline-primary rounded" %>
+  <% end %>
+</div>
