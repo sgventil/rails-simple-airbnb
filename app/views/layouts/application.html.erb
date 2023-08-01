@@ -15,10 +15,10 @@
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand m-0"><%= link_to "Simple Airbnb", flats_path, class: "text-decoration-none text-dark fs-5" %></a>
-        <form class="d-flex ms-auto  align-items-center">
-          <input class="form-control rounded me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success rounded me-2" type="submit">Search</button>
-        </form>
+        <%= form_tag flats_path, method: :get, class: "d-flex ms-auto  align-items-center" do %>
+          <%= text_field_tag :key, params[:key], class: "form-control rounded me-2", placeholder: "Search", aria_label: "Search" %>
+          <%= submit_tag "Search", class: "btn btn-outline-success rounded me-2" %>
+        <% end %>
           <%= link_to "Add Flat", new_flat_path, class: "text-decoration-none btn btn-outline-primary rounded" %>
       </div>
     </nav>
