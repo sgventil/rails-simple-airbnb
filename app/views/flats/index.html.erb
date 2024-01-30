@@ -1,0 +1,26 @@
+<div class='container'>
+  <h1 class='mt-4'>ALL our Flats</h1>
+  <h6 class='mb-4'>All 152 flats</h6>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <%= image_tag "photo.jpg", class: "card-image", alt: "Card image cap" %>
+          <div class="card-body bg-light">
+            <h4 class="card-title"><%= flat.name %></h4>
+            <p class="card-text"><%= flat.address %></p>
+            <div class='d-flex align-items-center gap-3'>
+              <i class="fa-solid fa-people-roof fa-sm"> <%= flat.number_of_guests %></i>
+              <i class="fa-solid fa-euro-sign fa-sm"> <%= flat.price_per_night %></i>
+            </div>
+          </div>
+          <div class="card-actions m-3">
+            <%= link_to "More info", flat_path(flat), class: "text-primary me-3" %>
+            <%= link_to "Edit", edit_flat_path(flat), class: "text-secondary text-warning" %>
+            <%= link_to "Remove", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Sure?"}, class: "text-danger ms-3" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

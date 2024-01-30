@@ -7,3 +7,19 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+puts 'Cleaning Database'
+Flat.destroy_all
+
+puts 'Creating Flats!'
+
+12.times do
+  flat = Flat.create!(
+    name: Faker::Mountain.name,
+    address: Faker::Address.street_address,
+    description: Faker::Restaurant.description,
+    price_per_night: rand(50..150),
+    number_of_guests: rand(2..8)
+  )
+  puts "Created Flat with ID#{flat.id}"
+end
+puts 'Finished!'
