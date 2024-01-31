@@ -1,0 +1,18 @@
+<div class='container'>
+  <div class="row justify-content-center">
+    <div class="col-md-6 my-4">
+      <div class="card p-3 bg-light form-control">
+        <h1>Add a New Flat</h1>
+          <%= simple_form_for [@flat] do |f|%>
+            <%= f.input :name %>
+            <%= f.input :address %>
+            <%= f.input :picture_url %>
+            <%= f.input :description %>
+            <%= f.input :price_per_night %>
+            <%= f.input :number_of_guests %>
+            <%= f.submit "Create Flat", class: "btn btn-primary" %>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>

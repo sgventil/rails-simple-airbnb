@@ -47,7 +47,7 @@ SimpleForm.setup do |config|
   # vertical forms
   #
   # vertical default_wrapper
-  config.wrappers :vertical_form, class: 'mb-3' do |b|
+  config.wrappers :vertical_form, class: 'mb-0' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
@@ -62,7 +62,7 @@ SimpleForm.setup do |config|
   end
 
   # vertical input for boolean
-  config.wrappers :vertical_boolean, tag: 'fieldset', class: 'mb-3' do |b|
+  config.wrappers :vertical_boolean, tag: 'fieldset', class: 'mb-0' do |b|
     b.use :html5
     b.optional :readonly
     b.wrapper :form_check_wrapper, class: 'form-check' do |bb|
@@ -98,7 +98,7 @@ SimpleForm.setup do |config|
   end
 
   # vertical file input
-  config.wrappers :vertical_file, class: 'mb-3' do |b|
+  config.wrappers :vertical_file, class: 'mb-0' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
@@ -111,7 +111,7 @@ SimpleForm.setup do |config|
   end
 
   # vertical select input
-  config.wrappers :vertical_select, class: 'mb-3' do |b|
+  config.wrappers :vertical_select, class: 'mb-0' do |b|
     b.use :html5
     b.optional :readonly
     b.use :label, class: 'form-label'
@@ -121,7 +121,7 @@ SimpleForm.setup do |config|
   end
 
   # vertical multi select
-  config.wrappers :vertical_multi_select, class: 'mb-3' do |b|
+  config.wrappers :vertical_multi_select, class: 'mb-0' do |b|
     b.use :html5
     b.optional :readonly
     b.use :label, class: 'form-label'
@@ -133,7 +133,7 @@ SimpleForm.setup do |config|
   end
 
   # vertical range input
-  config.wrappers :vertical_range, class: 'mb-3' do |b|
+  config.wrappers :vertical_range, class: 'mb-0' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :readonly
@@ -148,7 +148,7 @@ SimpleForm.setup do |config|
   # horizontal forms
   #
   # horizontal default_wrapper
-  config.wrappers :horizontal_form, class: 'row mb-3' do |b|
+  config.wrappers :horizontal_form, class: 'row mb-0' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
@@ -165,7 +165,7 @@ SimpleForm.setup do |config|
   end
 
   # horizontal input for boolean
-  config.wrappers :horizontal_boolean, class: 'row mb-3' do |b|
+  config.wrappers :horizontal_boolean, class: 'row mb-0' do |b|
     b.use :html5
     b.optional :readonly
     b.wrapper :grid_wrapper, class: 'col-sm-9 offset-sm-3' do |wr|
@@ -203,7 +203,7 @@ SimpleForm.setup do |config|
   end
 
   # horizontal file input
-  config.wrappers :horizontal_file, class: 'row mb-3' do |b|
+  config.wrappers :horizontal_file, class: 'row mb-0' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
@@ -218,7 +218,7 @@ SimpleForm.setup do |config|
   end
 
   # horizontal select input
-  config.wrappers :horizontal_select, class: 'row mb-3' do |b|
+  config.wrappers :horizontal_select, class: 'row mb-0' do |b|
     b.use :html5
     b.optional :readonly
     b.use :label, class: 'col-sm-3 col-form-label'
@@ -230,7 +230,7 @@ SimpleForm.setup do |config|
   end
 
   # horizontal multi select
-  config.wrappers :horizontal_multi_select, class: 'row mb-3' do |b|
+  config.wrappers :horizontal_multi_select, class: 'row mb-0' do |b|
     b.use :html5
     b.optional :readonly
     b.use :label, class: 'col-sm-3 col-form-label'
@@ -244,7 +244,7 @@ SimpleForm.setup do |config|
   end
 
   # horizontal range input
-  config.wrappers :horizontal_range, class: 'row mb-3' do |b|
+  config.wrappers :horizontal_range, class: 'row mb-0' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :readonly
@@ -292,7 +292,7 @@ SimpleForm.setup do |config|
   # bootstrap custom forms
   #
   # custom input switch for boolean
-  config.wrappers :custom_boolean_switch, class: 'mb-3' do |b|
+  config.wrappers :custom_boolean_switch, class: 'mb-0' do |b|
     b.use :html5
     b.optional :readonly
     b.wrapper :form_check_wrapper, tag: 'div', class: 'form-check form-switch' do |bb|
@@ -306,7 +306,7 @@ SimpleForm.setup do |config|
 
   # Input Group - custom component
   # see example app and config at https://github.com/heartcombo/simple_form-bootstrap
-  config.wrappers :input_group, class: 'mb-3' do |b|
+  config.wrappers :input_group, class: 'mb-0' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
@@ -328,7 +328,7 @@ SimpleForm.setup do |config|
   # Floating Labels form
   #
   # floating labels default_wrapper
-  config.wrappers :floating_labels_form, class: 'form-floating mb-3' do |b|
+  config.wrappers :floating_labels_form, class: 'form-floating mb-0' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
